@@ -1,0 +1,464 @@
+
+body{
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.news{
+    background-color: #106049;
+    color: #FFF;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.news div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.news input{
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 4px 13px;
+    cursor: pointer;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #FFF;
+    font-size: 1.30em;
+    color: rgb(100, 98, 98);
+}
+
+#containerNav, #containerNav div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+#containerNav{
+    padding: 0px 20px;
+}
+
+#containerNav a{
+    text-decoration: none;
+    color: rgb(100, 98, 98);
+}
+
+#containerNav a:hover{
+    color: #27b060;
+}
+
+#buscador{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#pruebaGratuita{
+    font-size: 1em;
+    color: rgb(53, 51, 51);
+    font-weight:600;
+    background-color: #01ed65;
+    padding: 18px 40px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+section{
+    position: relative;
+    background-color: #023531;
+    padding: 100px 50px;
+}
+
+section > div{
+    display: flex;
+    justify-content:space-between;
+    text-align: justify;
+    gap: 80px;
+}
+
+section > p{
+    color: white;
+    font-size: 1.18em;
+    text-align: justify;
+}
+
+section h1{
+    font-weight: lighter;
+    font-size: 4.8em;
+    text-align: start;
+    color: #FFF;
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    /* La puta madre esta propiedad */
+    word-wrap: break-word;
+}
+
+
+#novedad{
+    padding: 5px 7px;
+    margin-right: 15px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: rgb(53, 51, 51);
+    background-color: #b1ff05;
+    border-radius: 5px;
+}
+
+#masInformacion{
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 17px;
+}
+
+#masInformacion:hover{
+    color: #01ed65;
+}
+
+.flechaDerecha{
+    font-weight: 600;
+    font-size: 1.7em;
+    color: #01ed65;
+    margin-left: 17px;
+}
+
+section > div p{
+    color: #acbaba;
+    font-size: 1.35em;
+    line-height: 1.8;
+}
+
+#empezarGratis{
+    background-color: #01ed65;
+    color: rgb(51, 53, 51);
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 1.15em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#empezarGratis:hover{
+    border-radius: 30px;
+}
+
+#dudas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#dudas a{
+    text-decoration: none;
+    text-align: justify;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+#dudas a:hover{
+    color: #01ed65;
+}
+
+#imgSection{
+    width: 160%;
+}
+
+.menuContenido{
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #21313c;
+    padding: 20px 25px;
+}
+
+.containerMenu{
+    position: fixed;
+    width: 30%;
+    overflow-y: auto;
+    height: calc(100% - 300px);
+}
+
+.menuDesplegable{
+
+}
+
+.itemMenu a{
+    text-decoration: none;
+    color: white;
+}
+
+.menuDesplegable .divButtons{
+    margin-top: 10%;
+    display:flex;
+    justify-content: space-between;
+}
+
+#buttonPruebaGratis{
+    background-color: #01ed65;
+    color: black;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+#buttonIniciarSesion{
+    background-color: white;
+    color: black;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+.itemMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.itemMenu p{
+    color: white;
+}
+
+.itemMenu i{
+    color: #15a251;
+}
+
+.itemMenu p{
+    margin: 0;
+    padding: 0;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+.elementSubmenu{
+    background-color: #061621;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+.elementSubmenu p{
+    width: 60%;
+    color: white;
+}
+
+.elementSubmenu i{
+    color: #01ed65;
+}
+
+.divSubmenuOpen{
+    display: block;
+}
+
+.divSubmenuClosed{
+    display: none;
+}
+
+/* Navbar con menu desplegable y contenido en bloque */
+@media(min-width: 200px){
+
+    .menuDesplegable .divButtons{
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menuContenido{
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 85%;
+        height: 100%;
+        background-color: #21313c;
+        padding: 20px 25px;
+    }
+    
+    .containerMenu{
+        position: fixed;
+        width: 85%;
+    }
+
+    #containerNav{
+        display: flex;
+    }
+
+    #containerNav a {
+        display: none;
+    }
+
+    #pruebaGratuita{
+        display: none;
+    }
+
+    #buttonMenu{
+        display: block;
+    }
+
+    #contenedorSection{
+        display: block;
+    }
+
+    #imgSection{
+        width: 100%;
+    }
+}
+
+/* Navbar con menu desplegable y contenido en bloque */
+@media(min-width: 500px){
+
+    .menuDesplegable .divButtons{
+        margin-top: 10%;
+        display:flex;
+    }
+
+    .menuContenido{
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 55%;
+        height: 100%;
+        background-color: #21313c;
+        padding: 20px 25px;
+    }
+    
+    .containerMenu{
+        position: fixed;
+        width: 55%;
+    }
+
+    #containerNav{
+        display: flex;
+    }
+
+    #containerNav a {
+        display: none;
+    }
+
+    #pruebaGratuita{
+        display: none;
+    }
+
+    #buttonMenu{
+        display: block;
+    }
+
+    #contenedorSection{
+        display: block;
+    }
+
+    #imgSection{
+        width: 100%;
+    }
+}
+
+/* Navbar con menu desplegable y contenido en bloque 768-1239px */
+@media(min-width: 768px){
+
+    .menuDesplegable .divButtons{
+        margin-top: 10%;
+        display:flex;
+    }
+
+    .menuContenido{
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 30%;
+        height: 100%;
+        background-color: #21313c;
+        padding: 20px 25px;
+    }
+    
+    .containerMenu{
+        position: fixed;
+        width: 30%;
+    }
+
+    #opcionesNavbar{
+        display: none;
+    }
+
+    #containerNav a {
+        display: none;
+    }
+
+    #buttonMenu{
+        display: block;
+    }
+
+    #contenedorSection{
+        display: block;
+    }
+
+    #imgSection{
+        width: 100%;
+    }
+}
+/* Navbar con opciones dentro y contenido igual - 1024: Diseño original*/
+@media(min-width: 1240px){
+
+    .menuDesplegable .divButtons{
+        margin-top: 10%;
+        display:flex;
+    }
+
+    #containerNav a{
+        display: block;
+    }
+
+    #pruebaGratuita{
+        display: block;
+    }
+
+    #buttonMenu{
+        display: none;
+    }
+
+    #contenedorSection{
+        display: flex;
+    }
+
+    #imgSection{
+        width: 160%;
+    }
+}
